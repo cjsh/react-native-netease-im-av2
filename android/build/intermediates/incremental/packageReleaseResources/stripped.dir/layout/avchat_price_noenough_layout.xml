@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/av_price_dialog_bg"
+    android:minWidth="260dp"
+    android:orientation="vertical"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center|left"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="#666666"
+        android:textSize="14dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="16dp"
+        android:background="#A4A4A4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/negtive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+
+        <View
+            android:id="@+id/column_line"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#A4A4A4" />
+        <Button
+            android:id="@+id/positive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:singleLine="true"
+            android:textColor="#2E74FF"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

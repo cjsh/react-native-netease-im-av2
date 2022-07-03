@@ -1,0 +1,314 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.netease.im"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="26" />
+9-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml
+10
+11    <!-- 加入应用需要的权限 -->
+12    <!-- 网络相关 -->
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:6:5-66
+13-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:6:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:7:5-78
+14-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:7:22-76
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:8:5-75
+15-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:8:22-73
+16    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+16-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:9:5-75
+16-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:9:22-73
+17
+18    <!-- 控制呼吸灯，振动器等，用于新消息提醒 -->
+19    <uses-permission android:name="android.permission.FLASHLIGHT" />
+19-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:12:5-69
+19-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:12:22-66
+20    <uses-permission android:name="android.permission.VIBRATE" />
+20-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:13:5-66
+20-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:13:22-63
+21    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+21-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:15:5-78
+21-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:15:22-76
+22    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+22-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:16:5-80
+22-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:16:22-78
+23    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+23-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:17:5-72
+23-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:17:22-70
+24
+25    <!-- 手机状态 -->
+26    <uses-permission android:name="android.permission.GET_TASKS" />
+26-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:20:5-67
+26-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:20:22-65
+27    <uses-permission android:name="android.permission.WAKE_LOCK" />
+27-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:21:5-67
+27-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:21:22-65
+28    <uses-permission android:name="android.permission.BLUETOOTH" />
+28-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:22:5-67
+28-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:22:22-65
+29    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+29-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:23:5-73
+29-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:23:22-71
+30    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+30-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:24:5-78
+30-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:24:22-76
+31    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+31-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:25:5-79
+31-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:25:22-77
+32
+33    <!-- 读写文件 -->
+34    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+34-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:28:5-79
+34-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:28:22-77
+35    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+35-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:29:5-80
+35-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:29:22-78
+36
+37    <!-- 多媒体 -->
+38    <uses-permission android:name="android.permission.CAMERA" />
+38-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:32:5-64
+38-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:32:22-62
+39    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+39-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:33:5-70
+39-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:33:22-68
+40    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+40-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:34:5-74
+40-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:34:22-72
+41    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+41-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:36:5-73
+41-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:36:22-71
+42    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+42-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:37:5-74
+42-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:37:22-72
+43
+44    <!-- 蓝牙 startBluetoothSco 会用到此权限 -->
+45    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+45-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:40:5-74
+45-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:40:22-72
+46
+47    <!-- 允许应用程序使用camera硬件资源 -->
+48    <uses-feature android:name="android.hardware.camera" />
+48-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:43:5-59
+48-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:43:19-57
+49    <!-- 自动对焦 -->
+50    <uses-feature android:name="android.hardware.camera.autofocus" />
+50-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:45:5-69
+50-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:45:19-67
+51
+52    <application>
+52-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:47:5-165:19
+53
+54        <!-- 适配 Android O 版本后台运行机制 -->
+55        <service android:name="com.netease.nimlib.service.ResponseService" />
+55-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:50:9-78
+55-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:50:18-75
+56        <!-- 声明网易云通信后台服务，如需保持后台推送，使用独立进程效果会更好。 -->
+57        <service
+57-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:52:9-54:39
+58            android:name="com.netease.nimlib.service.NimService"
+58-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:53:13-65
+59            android:process=":core" />
+59-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:54:13-36
+60
+61        <!-- 运行后台辅助服务 -->
+62        <service
+62-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:57:9-59:39
+63            android:name="com.netease.nimlib.service.NimService$Aux"
+63-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:58:13-69
+64            android:process=":core" />
+64-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:59:13-36
+65
+66        <!-- 声明网易云通信后台辅助服务 -->
+67        <service
+67-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:62:9-66:39
+68            android:name="com.netease.nimlib.job.NIMJobService"
+68-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:63:13-64
+69            android:exported="true"
+69-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:64:13-36
+70            android:permission="android.permission.BIND_JOB_SERVICE"
+70-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:65:13-69
+71            android:process=":core" />
+71-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:66:13-36
+72
+73        <!--
+74             网易云通信SDK的监视系统启动和网络变化的广播接收器，用户开机自启动以及网络变化时候重新登录，
+75            保持和 NimService 同一进程
+76        -->
+77        <receiver
+77-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:70:9-78:20
+78            android:name="com.netease.nimlib.service.NimReceiver"
+78-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:71:13-66
+79            android:exported="false"
+79-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:72:13-37
+80            android:process=":core" >
+80-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:73:13-36
+81            <intent-filter>
+81-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:74:13-77:29
+82                <action android:name="android.intent.action.BOOT_COMPLETED" />
+82-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:75:17-79
+82-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:75:25-76
+83                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+83-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:76:17-79
+83-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:76:25-76
+84            </intent-filter>
+85        </receiver>
+86
+87        <!-- 网易云通信进程间通信 Receiver -->
+88        <receiver android:name="com.netease.nimlib.service.ResponseReceiver" />
+88-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:81:9-80
+88-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:81:19-77
+89
+90        <!-- 网易云通信进程间通信service -->
+91        <service android:name="com.netease.nimlib.service.ResponseService" />
+91-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:50:9-78
+91-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:50:18-75
+92
+93        <!-- 安卓保活配置 -->
+94        <service
+94-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:87:9-89:49
+95            android:name="com.netease.cosine.core.CosineService"
+95-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:88:13-65
+96            android:process=":cosine" />
+96-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:89:13-38
+97
+98        <receiver
+98-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:91:9-94:50
+99            android:name="com.netease.cosine.target.CosineReceiver"
+99-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:92:13-68
+100            android:exported="true"
+100-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:93:13-36
+101            android:process=":cosine" />
+101-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:94:13-38
+102
+103        <meta-data
+103-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:96:9-98:32
+104            android:name="com.netease.cosine.target"
+104-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:97:13-53
+105            android:value="" />
+105-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:98:13-29
+106        <meta-data
+106-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:99:9-101:70
+107            android:name="com.netease.cosine.target.receiver"
+107-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:100:13-62
+108            android:value="com.netease.nimlib.service.NimReceiver" />
+108-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:101:13-67
+109
+110        <activity
+110-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:103:9-107:66
+111            android:name="com.netease.im.AVP2PActivity"
+111-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:104:13-42
+112            android:launchMode="singleTask"
+112-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:105:13-44
+113            android:screenOrientation="portrait"
+113-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:106:13-49
+114            android:theme="@style/Theme.AppCompat.NoActionBar" />
+114-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:107:13-63
+115
+116        <!-- 小米推送配置 -->
+117        <service
+117-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:110:9-115:41
+118            android:name="com.xiaomi.push.service.XMJobService"
+118-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:111:13-64
+119            android:enabled="true"
+119-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:112:13-35
+120            android:exported="false"
+120-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:113:13-37
+121            android:permission="android.permission.BIND_JOB_SERVICE"
+121-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:114:13-69
+122            android:process=":mixpush" />
+122-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:115:13-39
+123        <service
+123-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:117:9-120:41
+124            android:name="com.xiaomi.push.service.XMPushService"
+124-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:118:13-65
+125            android:enabled="true"
+125-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:119:13-35
+126            android:process=":mixpush" />
+126-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:120:13-39
+127
+128        <receiver
+128-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:122:9-129:20
+129            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+129-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:123:13-74
+130            android:exported="false"
+130-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:124:13-37
+131            android:process=":mixpush" >
+131-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:125:13-39
+132            <intent-filter>
+132-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:126:13-128:29
+133                <action android:name="com.xiaomi.push.PING_TIMER" />
+133-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:127:17-68
+133-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:127:25-66
+134            </intent-filter>
+135        </receiver>
+136
+137        <!--
+138        <receiver
+139            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+140            android:exported="true">
+141            <intent-filter>
+142                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+143
+144                <category android:name="android.intent.category.DEFAULT"/>
+145            </intent-filter>
+146        </receiver>
+147        -->
+148
+149        <service
+149-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:141:9-144:38
+150            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+150-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:142:13-68
+151            android:enabled="true"
+151-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:143:13-35
+152            android:exported="true" />
+152-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:144:13-36
+153        <service
+153-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:146:9-148:37
+154            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+154-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:147:13-70
+155            android:enabled="true" />
+155-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:148:13-35
+156
+157        <receiver
+157-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:150:9-158:20
+158            android:name="com.netease.nimlib.mixpush.mi.MiPushReceiver"
+158-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:151:13-72
+159            android:exported="true" >
+159-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:152:13-36
+160            <intent-filter android:priority="0x7fffffff" >
+160-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:153:13-157:29
+160-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:153:28-57
+161                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+161-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:154:17-75
+161-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:154:25-73
+162                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+162-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:155:17-75
+162-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:155:25-73
+163                <action android:name="com.xiaomi.mipush.ERROR" />
+163-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:156:17-65
+163-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:156:25-63
+164            </intent-filter>
+165        </receiver>
+166        <receiver android:name="com.netease.im.receiver.NetworkReceiver" >
+166-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:159:9-164:20
+166-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:159:19-59
+167            <intent-filter>
+167-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:160:13-163:29
+168                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+168-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:76:17-79
+168-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:76:25-76
+169
+170                <category android:name="android.intent.category.DEFAULT" />
+170-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:162:17-75
+170-->/Users/chenjun/WorkSpace/ReactNative/nodejs_rn21/yiyao/node_modules/react-native-neteset-im-av2/android/src/main/AndroidManifest.xml:162:27-73
+171            </intent-filter>
+172        </receiver>
+173    </application>
+174
+175</manifest>

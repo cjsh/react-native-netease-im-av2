@@ -1,0 +1,89 @@
+buildscript {
+    ext.kotlin_version = "1.4.21"
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_version}"
+    }
+}
+
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    useLibrary 'org.apache.http.legacy'
+
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+    sourceSets{
+        main{
+            jniLibs.srcDir(['libs'])
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+//    kotlinOptions {
+//        jvmTarget = '1.8'
+//    }
+//    buildFeatures {
+//        dataBinding = true
+//    }
+    dataBinding {
+        enabled = true
+    }
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+}
+
+repositories {
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'https://maven.aliyun.com/repository/google' }
+    maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+    maven { url 'https://www.jitpack.io' }
+    mavenLocal()
+    mavenCentral()
+    google()
+    jcenter()
+}
+
+dependencies {
+//    implementation 'com.blankj:utilcode:1.30.6'
+    compile fileTree(include: '*.jar', dir: 'libs')
+    implementation 'com.facebook.react:react-native:+'
+//    api 'com.netease.yunxin:nertc:4.2.120'
+//    // 添加依赖。注意，版本号必须一致。
+//    // 基础功能 (必需)
+  //    implementation 'com.netease.nimlib:basesdk:8.5.5'
+//    // 信令服务需要
+//    implementation 'com.netease.nimlib:avsignalling:8.5.5'
+    // 小米、华为、魅a]族、fcm 推送
+    implementation 'com.netease.nimlib:push:8.5.5'
+    implementation 'com.netease.yunxin.kit:call-ui:1.5.5'
+//    compile project(':react-native-neteset-im-av2:avchatkit')
+    implementation 'net.zetetic:android-database-sqlcipher:3.5.9'
+}
